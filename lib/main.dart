@@ -14,30 +14,12 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class AutoBuild extends StatefulWidget {
-  AutoBuild({Key? key}) : super(key: key);
-  @override
-  _AutoBuildState createState() => _AutoBuildState();
-}
-
-class _AutoBuildState extends State<AutoBuild> {
-
+class AutoBuild extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Auto Build APK"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Auto Build APK',
-            ),
-          ],
-        ),
-      ),
+      body: Column(children: [Text("Auto Build APK")]),
     );
   }
 }
